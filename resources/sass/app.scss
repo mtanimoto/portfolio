@@ -1,0 +1,443 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+/****************************
+ * common
+ ****************************/
+body {
+    background-color: #fff;
+    // font-family: "Font Awesome 5 Free";
+    text-align: justify;
+    color: #333;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tagItem {
+    margin-right: 5px;
+    color: #ccc;
+}
+
+.bgOrange {
+    background-color: $cyan;
+}
+
+/****************************
+ * index
+ ****************************/
+
+/****************************
+ * profile
+ ****************************/
+
+/****************************
+ * blogList
+ ****************************/
+
+/****************************
+ * blogPage
+ ****************************/
+
+/****************************
+ * blogEdit
+ ****************************/
+.blogEdit > form > input,
+.blogEdit > form > textarea {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/****************************
+ * markdownスタイル
+ ****************************/
+// pandoc --metadata pagetitle="sample" -f markdown -t html --template=mytemplate sample.md > sample.html
+// https://github.com/cawpea/md2html-template-for-pandoc/blob/master/md2html.html
+.md2html-container {
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.md2html-container > h1:first-child {
+    margin-top: 0;
+}
+.md2html-container a {
+    color: #4183C4;
+}
+
+.md2html-container a.absent {
+    color: #cc0000;
+}
+
+.md2html-container a.anchor {
+    display: block;
+    padding-left: 30px;
+    margin-left: -30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.md2html-container h1,
+.md2html-container h2,
+.md2html-container h3,
+.md2html-container h4,
+.md2html-container h5,
+.md2html-container h6 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+    position: relative;
+}
+.md2html-container h1:hover a.anchor,
+.md2html-container h2:hover a.anchor,
+.md2html-container h3:hover a.anchor,
+.md2html-container h4:hover a.anchor,
+.md2html-container h5:hover a.anchor,
+.md2html-container h6:hover a.anchor {
+    // background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;
+    text-decoration: none;
+}
+
+.md2html-container h1 tt,
+.md2html-container h1 code {
+    font-size: inherit;
+}
+
+.md2html-container h2 tt,
+.md2html-container h2 code {
+    font-size: inherit;
+}
+
+.md2html-container h3 tt,
+.md2html-container h3 code {
+    font-size: inherit;
+}
+
+.md2html-container h4 tt,
+.md2html-container h4 code {
+    font-size: inherit;
+}
+
+.md2html-container h5 tt,
+.md2html-container h5 code {
+    font-size: inherit;
+}
+
+.md2html-container h6 tt,
+.md2html-container h6 code {
+    font-size: inherit;
+}
+.md2html-container h1 {
+    font-size: 28px;
+    color: black;
+}
+.md2html-container h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+    color: black;
+}
+
+.md2html-container h3 {
+    font-size: 18px;
+}
+
+.md2html-container h4 {
+    font-size: 16px;
+}
+
+.md2html-container h5 {
+    font-size: 14px;
+}
+
+.md2html-container h6 {
+    color: #777777;
+    font-size: 14px;
+}
+
+.md2html-container p,
+.md2html-container blockquote,
+.md2html-container,
+.md2html-container ol,
+.md2html-container dl,
+.md2html-container li,
+.md2html-container table,
+.md2html-container pre {
+    margin: 15px 0;
+}
+
+.md2html-container hr {
+    // background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
+    border: 0 none;
+    color: #cccccc;
+    height: 4px;
+    padding: 0;
+}
+
+.md2html-container a:first-child h1,
+.md2html-container a:first-child h2,
+.md2html-container a:first-child h3,
+.md2html-container a:first-child h4,
+.md2html-container a:first-child h5,
+.md2html-container a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.md2html-container h1 p,
+.md2html-container h2 p,
+.md2html-container h3 p,
+.md2html-container h4 p,
+.md2html-container h5 p,
+.md2html-container h6 p {
+    margin-top: 0;
+}
+
+.md2html-container li p.first {
+    display: inline-block;
+}
+
+.md2html-container ol {
+    padding-left: 30px;
+}
+
+.md2html-container :first-child,
+.md2html-container ol :first-child {
+    margin-top: 0;
+}
+
+.md2html-container :last-child,
+.md2html-container ol :last-child {
+    margin-bottom: 0;
+}
+
+.md2html-container dl {
+    padding: 0;
+}
+.md2html-container dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px;
+}
+
+.md2html-container dl dt:first-child {
+    padding: 0;
+}
+
+.md2html-container dl dt > :first-child {
+    margin-top: 0;
+}
+.md2html-container dl dt > :last-child {
+        margin-bottom: 0;
+}
+.md2html-container dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px;
+}
+.md2html-container dl dd > :first-child {
+    margin-top: 0;
+}
+.md2html-container dl dd > :last-child {
+    margin-bottom: 0;
+}
+.md2html-container blockquote {
+    border-left: 4px solid #dddddd;
+    padding: 0 15px;
+    color: #777777;
+}
+
+.md2html-container blockquote > :first-child {
+    margin-top: 0;
+}
+
+.md2html-container blockquote > :last-child {
+    margin-bottom: 0;
+}
+.md2html-container table {
+    border-collapse: collapse;
+    padding: 0;
+}
+
+.md2html-container table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.md2html-container table tr:nth-child(2n) {
+    background-color: #f8f8f8; 
+}
+.md2html-container table tr th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+.md2html-container table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+.md2html-container table tr th :first-child,
+.md2html-container table tr td :first-child {
+    margin-top: 0;
+}
+.md2html-container table tr th :last-child,
+.md2html-container table tr td :last-child {
+    margin-bottom: 0;
+}
+.md2html-container img {
+    max-width: 100%;
+}
+
+span.frame {
+    display: block;
+    overflow: hidden;
+}
+span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto;
+}
+
+.md2html-container span.frame span img {
+    display: block;
+    float: left;
+}
+
+.md2html-container span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0;
+}
+
+.md2html-container span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.md2html-container span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center;
+}
+.md2html-container span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+.md2html-container span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.md2html-container span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right;
+}
+.md2html-container span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+
+.md2html-container span.float-left {
+    display: block;
+    margin-right: 13px;
+    overflow: hidden;
+    float: left;
+}
+
+.md2html-container span.float-left span {
+    margin: 13px 0 0;
+}
+
+.md2html-container span.float-right {
+    display: block;
+    margin-left: 13px;
+    overflow: hidden;
+    float: right;
+}
+
+.md2html-container span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right;
+}
+
+.md2html-container code,
+.md2html-container tt {
+    margin: 0 2px;
+    padding: 0 5px;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+.md2html-container pre code {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    border: none;
+    background: transparent;
+}
+
+.md2html-container .highlight pre {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.md2html-container pre {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.md2html-container pre code,
+.md2html-container pre tt {
+    background-color: transparent;
+    border: none;
+}
